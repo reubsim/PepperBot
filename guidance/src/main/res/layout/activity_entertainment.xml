@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Green top bar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#82bf45"
+        android:layout_alignParentTop="true" />
+
+    <!-- Entertainment section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!-- Header text -->
+        <TextView
+            android:id="@+id/tvEntertainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="64dp"
+            android:text="Entertainment"
+            android:textSize="48sp" />
+
+        <!-- Button section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Hear a joke Button -->
+            <Button
+                android:id="@+id/buttonJoke"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="8dp"
+                android:text="Hear a joke"
+                android:textSize="24sp" />
+
+            <!-- Dance Button -->
+            <Button
+                android:id="@+id/buttonDance"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Dance"
+                android:textSize="24sp" />
+
+            <!-- Random Trivia Button -->
+            <Button
+                android:id="@+id/buttonTrivia"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:text="Random Trivia"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

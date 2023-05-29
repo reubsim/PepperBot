@@ -19,3 +19,5 @@ dependencyResolutionManagement {
 rootProject.name = "PepperBot"
 include ':app'
 include ':app:faq'
+include ':app:guidance'
+include ':guidance'
