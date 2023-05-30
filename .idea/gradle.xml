@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/app/faq" />
             <option value="$PROJECT_DIR$/app/guidance" />
             <option value="$PROJECT_DIR$/guidance" />
+            <option value="$PROJECT_DIR$/queue" />
             <option value="$PROJECT_DIR$/welcome" />
           </set>
         </option>

@@ -15,6 +15,7 @@ import com.aldebaran.qi.sdk.object.conversation.Say;
 public class entertainment extends AppCompatActivity implements RobotLifecycleCallbacks {
 
     private Button btnJoke;
+    private Button btnTrivia;
     private QiContext qiContext;
 
     @Override
@@ -23,6 +24,7 @@ public class entertainment extends AppCompatActivity implements RobotLifecycleCa
         setContentView(R.layout.activity_entertainment);
 
         btnJoke = findViewById(R.id.buttonJoke);
+        btnTrivia = findViewById(R.id.buttonTrivia);
 
         // Register the RobotLifecycleCallbacks to get the QiContext
         QiSDK.register(this, this);
@@ -33,12 +35,29 @@ public class entertainment extends AppCompatActivity implements RobotLifecycleCa
                 tellJoke();
             }
         });
+
+        btnTrivia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tellTrivia();
+            }
+        });
     }
 
     private void tellJoke() {
         if (qiContext != null) {
             Say say = SayBuilder.with(qiContext)
                     .withText("Why don't scientists trust atoms? Because they make up everything!")
+                    .build();
+
+            say.async().run();
+        }
+    }
+
+    private void tellTrivia() {
+        if (qiContext != null) {
+            Say say = SayBuilder.with(qiContext)
+                    .withText("RP is the first poly to adopt the Problem-based Learning method, encouraged students to learn by thinking out of the box to devise innovative solutions.")
                     .build();
 
             say.async().run();
