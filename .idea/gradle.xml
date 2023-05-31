@@ -12,9 +12,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app/faq" />
-            <option value="$PROJECT_DIR$/faqssearch" />
-            <option value="$PROJECT_DIR$/foundlist" />
-            <option value="$PROJECT_DIR$/lostnfound" />
+            <option value="$PROJECT_DIR$/app/guidance" />
+            <option value="$PROJECT_DIR$/guidance" />
+            <option value="$PROJECT_DIR$/queue" />
+            <option value="$PROJECT_DIR$/welcome" />
           </set>
         </option>
       </GradleProjectSettings>

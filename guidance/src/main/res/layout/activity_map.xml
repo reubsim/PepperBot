@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Green top bar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#82bf45"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Map container -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6">
+
+            <!-- Placeholder for the map -->
+            <!-- Replace this with your map implementation -->
+
+            <ImageView
+                android:id="@+id/ivMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/rp_map" />
+        </FrameLayout>
+
+        <!-- List of random locations -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
+
+            <!-- Header text -->
+            <TextView
+                android:id="@+id/tvLocations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Random Locations"
+                android:textSize="24sp" />
+
+            <!-- List of locations -->
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lvLocations"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
