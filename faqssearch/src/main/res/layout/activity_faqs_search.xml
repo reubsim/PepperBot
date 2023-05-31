@@ -1,0 +1,73 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Green top bar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#82bf45"
+        android:layout_alignParentTop="true" />
+
+    <!-- Green background box -->
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#82BF45"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <!-- Header text -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:text="Search FAQs"
+            android:textSize="48sp" />
+
+        <!-- Search bar -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edittext"
+                android:hint="How can we help you today?"
+                android:padding="8dp"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="8dp"
+                android:src="@drawable/ic_search" />
+
+        </LinearLayout>
+
+        <!-- Submit button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Submit"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
